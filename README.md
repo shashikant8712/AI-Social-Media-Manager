@@ -20,4 +20,4 @@ An AI-powered Social Media Manager built with:
 
 ## Status
 
-🚧 Under Development
+🚧 Under Developmentv
