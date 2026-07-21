@@ -314,3 +314,6 @@ Generate 20 viral content ideas in {tone} style.
         "niche": niche,
         "ideas": response.text
     }
+@app.get("/")
+def root():
+    return {"message": "Backend is running"}
