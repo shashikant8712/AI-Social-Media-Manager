@@ -44,7 +44,7 @@ export default function App() {
 const param = tool === "ideas" ? "niche" : "topic";
 
 const response = await fetch(
-  `https://ai-social-media-manager-gl2x.vercel.app/${endpoint}?${param}=${encodeURIComponent(topic)}&platform=${encodeURIComponent(platform)}&tone=${encodeURIComponent(tone)}`,
+  `https://ai-social-media-manager-rknf-git-main-shashikant8712s-projects.vercel.app/${endpoint}?${param}=${encodeURIComponent(topic)}&platform=${encodeURIComponent(platform)}&tone=${encodeURIComponent(tone)}`,
   {
     method: "POST",
   }
