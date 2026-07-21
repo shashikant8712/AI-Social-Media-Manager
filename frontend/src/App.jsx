@@ -49,6 +49,13 @@ const response = await fetch(
     method: "POST",
   }
 );
+console.log("Status:", response.status);
+console.log("OK:", response.ok);
+if (!response.ok) {
+  const errorText = await response.text();
+  console.log(errorText);
+  throw new Error(errorText);
+}
 
       const data = await response.json();
 
