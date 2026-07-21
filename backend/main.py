@@ -16,7 +16,10 @@ app = FastAPI(
 )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+    "http://localhost:5173",
+    "https://ai-social-media-manager-khaki.vercel.app",
+],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -314,6 +317,3 @@ Generate 20 viral content ideas in {tone} style.
         "niche": niche,
         "ideas": response.text
     }
-@app.get("/")
-def root():
-    return {"message": "Backend is running"}
